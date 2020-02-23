@@ -1,0 +1,22 @@
+package streder_problem1;
+
+import java.security.SecureRandom;
+
+public class CAI1 {
+
+	public static void main(String[] args) {
+		CAI1 question = new CAI1();
+		question.askQuestion();
+	}
+	
+	void askQuestion() {
+		SecureRandom number = new SecureRandom();
+		int x = number.nextInt(10);
+		int y = number.nextInt(10);
+		
+		System.out.printf("How much is %d times %d", x, y);
+	}
+
+}
+
+

@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Streder\eclipse-workspace\streder_problem1\.metadata\.plugins\org.eclipse.jdt.core
+2473239860.index
+1386604667.index

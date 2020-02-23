@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:askQuestion,org.eclipse.launchbar.core.descriptorType.default\:CAI4,org.eclipse.launchbar.core.descriptorType.default\:CAI3,org.eclipse.launchbar.core.descriptorType.default\:CAI2,org.eclipse.launchbar.core.descriptorType.default\:CAI1,org.eclipse.launchbar.core.descriptorType.default\:CAI5
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:askQuestion/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:askQuestion/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

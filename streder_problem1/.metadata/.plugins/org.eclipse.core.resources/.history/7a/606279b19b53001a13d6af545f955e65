@@ -1,0 +1,70 @@
+package streder_problem1;
+
+import java.security.SecureRandom;
+import java.util.Scanner;
+
+public class CAI3 {
+	private static int x;
+	private static int y;
+	
+	public static void main(String[] args) {
+		
+		CAI3 question = new CAI3();
+		double percentage = 0;
+		for(int i = 0; i < 10; i++)
+		{
+			question.askQuestion();
+			percentage = question.isAnswerCorrect(x, y);
+		}
+		
+		if(percentage >= 75)
+		{
+			question.displayCorrectResponse(percentage);
+		}
+		else
+		{
+			question.displayIncorrectResponse(percentage);
+		}
+	}
+	
+	void askQuestion() {
+		SecureRandom number = new SecureRandom();
+		x = number.nextInt(10);
+		y = number.nextInt(10);
+		
+		System.out.printf("How much is %d times %d\n", x, y);
+	}
+	
+	public int readResponse() {
+		Scanner input = new Scanner(System.in);
+		int answer = input.nextInt();
+		return answer;
+	}
+	
+	public double isAnswerCorrect(int x, int y) {
+		CAI3 answer = new CAI3();
+		int result = answer.readResponse();
+		int count = 0;
+		double percent = 0;
+		double percentage = 0;
+		
+		if(result == x * y)
+		{
+			count = count + 1;
+			percent = (count / 10);
+			percentage = percent * 100;
+			System.out.printf("%f", percentage);
+		}
+		
+		return percentage;
+	}
+	
+	void displayCorrectResponse(double percent) {
+		System.out.println("Congratulations, you are ready to go to the next level!");
+	}
+	
+	void displayIncorrectResponse(double percent) {
+		System.out.println("Please ask your teacher for extra help.");
+	}
+
+}
